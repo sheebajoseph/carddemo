@@ -45,3 +45,7 @@ If you change the program's output on purpose, run `./run.sh` again and commit t
 - `OUT-ACCT-CURR-CYC-DEBIT` is only set when the input debit is zero (it gets 2525.00). Otherwise it keeps whatever was already in the record area. The port keeps that record area between records and starts it as `X'00'`.
 - `OUT-ACCT-REISSUE-DATE` takes 10 bytes of the COBDATFT output, but COBDATFT only fills 8 of them. The last 2 bytes are uninitialized storage, written as `X'00'` here.
 - `DISPLAY` prints signed zoned fields as their raw characters, with the sign folded into the last digit (e.g. `00000002757N` = -275.75).
+
+## Checking against the original COBOL
+
+`gnucobol/` runs the unmodified `CBACT01C.cbl` under GnuCOBOL on the same input and compares it field by field with `output/`. See `gnucobol/README.md`.

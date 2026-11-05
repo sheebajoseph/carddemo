@@ -1,0 +1,36 @@
+OUTFILE
+  KNOWN    rec 1 OUT-ACCT-REISSUE-DATE (last 2 bytes) java=0000 gnu=2020  (uninitialised WORKING-STORAGE: Java X'00', GnuCOBOL spaces)
+  KNOWN    rec 2 OUT-ACCT-REISSUE-DATE (last 2 bytes) java=0000 gnu=2020  (uninitialised WORKING-STORAGE: Java X'00', GnuCOBOL spaces)
+  KNOWN    rec 3 OUT-ACCT-REISSUE-DATE (last 2 bytes) java=0000 gnu=2020  (uninitialised WORKING-STORAGE: Java X'00', GnuCOBOL spaces)
+ARRYFILE
+  KNOWN    rec 1 ARR-ACCT-CURR-BAL(4) java=f0f0f0f0f0f0f0f0f0f0f0c0 gnu=303030303030303030303030  (same value; +0 written with sign zone C by Java, unsigned/F zone by GnuCOBOL INITIALIZE)
+  KNOWN    rec 1 ARR-ACCT-CURR-BAL(5) java=f0f0f0f0f0f0f0f0f0f0f0c0 gnu=303030303030303030303030  (same value; +0 written with sign zone C by Java, unsigned/F zone by GnuCOBOL INITIALIZE)
+  KNOWN    rec 2 ARR-ACCT-CURR-BAL(4) java=f0f0f0f0f0f0f0f0f0f0f0c0 gnu=303030303030303030303030  (same value; +0 written with sign zone C by Java, unsigned/F zone by GnuCOBOL INITIALIZE)
+  KNOWN    rec 2 ARR-ACCT-CURR-BAL(5) java=f0f0f0f0f0f0f0f0f0f0f0c0 gnu=303030303030303030303030  (same value; +0 written with sign zone C by Java, unsigned/F zone by GnuCOBOL INITIALIZE)
+  KNOWN    rec 3 ARR-ACCT-CURR-BAL(4) java=f0f0f0f0f0f0f0f0f0f0f0c0 gnu=303030303030303030303030  (same value; +0 written with sign zone C by Java, unsigned/F zone by GnuCOBOL INITIALIZE)
+  KNOWN    rec 3 ARR-ACCT-CURR-BAL(5) java=f0f0f0f0f0f0f0f0f0f0f0c0 gnu=303030303030303030303030  (same value; +0 written with sign zone C by Java, unsigned/F zone by GnuCOBOL INITIALIZE)
+VBRCFILE
+  KNOWN    rec 1 RDW java=00100000 gnu=000c0000  (z/OS RDW length includes the 4-byte prefix; GnuCOBOL varseq_format 0 does not)
+  KNOWN    rec 2 RDW java=002b0000 gnu=00270000  (z/OS RDW length includes the 4-byte prefix; GnuCOBOL varseq_format 0 does not)
+  KNOWN    rec 3 RDW java=00100000 gnu=000c0000  (z/OS RDW length includes the 4-byte prefix; GnuCOBOL varseq_format 0 does not)
+  KNOWN    rec 4 RDW java=002b0000 gnu=00270000  (z/OS RDW length includes the 4-byte prefix; GnuCOBOL varseq_format 0 does not)
+  KNOWN    rec 5 RDW java=00100000 gnu=000c0000  (z/OS RDW length includes the 4-byte prefix; GnuCOBOL varseq_format 0 does not)
+  KNOWN    rec 6 RDW java=002b0000 gnu=00270000  (z/OS RDW length includes the 4-byte prefix; GnuCOBOL varseq_format 0 does not)
+console.log
+  KNOWN    line 4 ACCT-CURR-BAL java='00000019400{' gnu='000000194000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 5 ACCT-CREDIT-LIMIT java='00000202000{' gnu='000002020000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 6 ACCT-CASH-CREDIT-LIMIT java='00000102000{' gnu='000001020000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 10 ACCT-CURR-CYC-CREDIT java='00000001255{' gnu='000000012550+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 11 ACCT-CURR-CYC-DEBIT java='00000003102E' gnu='000000031025+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 19 ACCT-CURR-BAL java='00000015800{' gnu='000000158000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 20 ACCT-CREDIT-LIMIT java='00000613000{' gnu='000006130000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 21 ACCT-CASH-CREDIT-LIMIT java='00000544800{' gnu='000005448000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 25 ACCT-CURR-CYC-CREDIT java='00000000000{' gnu='000000000000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 26 ACCT-CURR-CYC-DEBIT java='00000000000{' gnu='000000000000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 34 ACCT-CURR-BAL java='00000002757N' gnu='000000027575-'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 35 ACCT-CREDIT-LIMIT java='00000050000{' gnu='000000500000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 36 ACCT-CASH-CREDIT-LIMIT java='00000015000{' gnu='000000150000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 40 ACCT-CURR-CYC-CREDIT java='00000000400{' gnu='000000004000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+  KNOWN    line 41 ACCT-CURR-CYC-DEBIT java='00000001200{' gnu='000000012000+'  (same value; IBM DISPLAY shows overpunch, GnuCOBOL 3.1 shows trailing sign)
+
+SUMMARY: 113 identical, 30 known differences, 0 mismatches
